@@ -6,17 +6,17 @@ namespace SvcUtil.Extension.InjectProxy
 {
     public class Proxy : IWebProxy
     {
-        private string domain { get; set; }
-        private string username { get; set; }
-        private string password { get; set; }
-        private string proxyUri { get; set; }
+        public string domain { get; private set; }
+        public string username { get; private set; }
+        public string password { get; private set; }
+        public string proxyUri { get; private set; }
 
         public Proxy ()
         {
-            this.domain = ConfigurationSettings.AppSettings["domain"];
-            this.username = ConfigurationSettings.AppSettings["username"];
-            this.password = ConfigurationSettings.AppSettings["password"];
-            this.proxyUri = ConfigurationSettings.AppSettings["uri"];
+            this.domain = ConfigurationManager.AppSettings["domain"];
+            this.username = ConfigurationManager.AppSettings["username"];
+            this.password = ConfigurationManager.AppSettings["password"];
+            this.proxyUri = ConfigurationManager.AppSettings["proxyUri"];
         }
 
         public ICredentials Credentials
@@ -35,5 +35,4 @@ namespace SvcUtil.Extension.InjectProxy
             return false;
         }
     }
-}
 }
