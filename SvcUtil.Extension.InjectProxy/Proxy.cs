@@ -21,14 +21,13 @@ namespace SvcUtil.Extension.InjectProxy
 
         public ICredentials Credentials
         {
-            get { return new NetworkCredential("user", "password"); }
-            //or get { return new NetworkCredential("user", "password","domain"); }
+            get { return new NetworkCredential(username, password, domain); }
             set { }
         }
 
         public Uri GetProxy(Uri destination)
         {
-            return new Uri("http://my.proxy:8080");
+            return new Uri(proxyUri);
         }
 
         public bool IsBypassed(Uri host)
