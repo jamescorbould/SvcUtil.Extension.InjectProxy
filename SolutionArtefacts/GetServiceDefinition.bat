@@ -1,0 +1,1 @@
+svcutil.exe /t:metadata http://SomeService.svc?wsdl

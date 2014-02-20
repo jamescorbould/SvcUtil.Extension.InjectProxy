@@ -5,6 +5,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SvcUtil.Extension.InjectPro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SvcUtil.Extension.InjectProxy.Console", "SvcUtil.Extension.InjectProxy.Console\SvcUtil.Extension.InjectProxy.Console.csproj", "{79216716-3263-45A9-A66C-379FBF422CF1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionArtefacts", "SolutionArtefacts", "{687AABDE-526D-4C47-A2EA-89CFA6F145AD}"
+	ProjectSection(SolutionItems) = preProject
+		SolutionArtefacts\GetServiceDefinition.bat = SolutionArtefacts\GetServiceDefinition.bat
+		SolutionArtefacts\SvcUtil.exe.config = SolutionArtefacts\SvcUtil.exe.config
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
