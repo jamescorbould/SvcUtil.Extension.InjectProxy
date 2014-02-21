@@ -16,7 +16,7 @@ namespace SvcUtil.Extension.InjectProxy
         public Proxy ()
         {
             // Change the AppDomain default config file location, since this assembly will be installed in the GAC.
-            AppDomain.CurrentDomain.SetData("APP_CONFIG_FILE", ConfigurationManager.AppSettings["pathToConfigFile"]);
+            AppDomain.CurrentDomain.SetData("APP_CONFIG_FILE", @"C:\Temp\SvcUtil.Extension.InjectProxy.dll.config");
             ResetConfigMechanism();
 
             this.domain = ConfigurationManager.AppSettings["domain"];
