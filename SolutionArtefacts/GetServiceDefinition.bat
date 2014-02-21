@@ -1,3 +1,3 @@
 @echo off
-svcutil.exe /t:metadata http://jcdevbts2013/RandomPresentService/Service.svc?wsdl
+svcutil.exe /t:metadata http://SomeService.svc?wsdl
 pause

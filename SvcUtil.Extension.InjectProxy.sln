@@ -8,7 +8,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionArtefacts", "SolutionArtefacts", "{687AABDE-526D-4C47-A2EA-89CFA6F145AD}"
 	ProjectSection(SolutionItems) = preProject
 		SolutionArtefacts\GetServiceDefinition.bat = SolutionArtefacts\GetServiceDefinition.bat
+		SolutionArtefacts\SvcUtil.exe = SolutionArtefacts\SvcUtil.exe
 		SolutionArtefacts\SvcUtil.exe.config = SolutionArtefacts\SvcUtil.exe.config
+		SolutionArtefacts\SvcUtil.Extension.InjectProxy.dll.config = SolutionArtefacts\SvcUtil.Extension.InjectProxy.dll.config
 	EndProjectSection
 EndProject
 Global
